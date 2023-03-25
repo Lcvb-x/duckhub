@@ -21,7 +21,6 @@ cs:NewLabel("https://discord.gg/2JYcvwCeTJ")
 cs:NewButton("Copy link to discord server", "Discord server", function()
     setclipboard(tostring("https://discord.gg/2JYcvwCeTJ"))
 end)
-Musclestate = false
 sps = false
 jps = false
 csect:NewToggle("SpeedHack","SpeedHack toggle",function(state)
@@ -37,22 +36,6 @@ csect:NewToggle("SpeedHack","SpeedHack toggle",function(state)
 end)
 csect:NewSlider("WalkSpeed", "Speed", 1000, 0, function(s) 
     speed = s
-end)
-csect:NewToggle("JumpHack","JumpHack toggle",function(state)
-    if state then
-        jps = true
-        while jps do
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = jump
-            wait(0.005)
-        end
-    else
-        jps = false
-    end
-end)
-ifs = false
-
-csect:NewSlider("JumpPower", "Jump", 1000, 0, function(s) 
-    jump = s
 end)
 csect:NewToggle("Infinite Jump","Jump !",function(state)
     if state then
