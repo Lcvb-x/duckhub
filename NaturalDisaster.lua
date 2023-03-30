@@ -10,7 +10,7 @@ end
 speed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
 jump = game.Players.LocalPlayer.Character.Humanoid.JumpPower
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
-local Window = Library.CreateLib("Natural Disaster survival hack", "RJTheme3")
+local Window = Library.CreateLib("Natural Disaster Survival hack", "RJTheme2")
 local ctab = Window:NewTab("Character")
 local csect = ctab:NewSection("Character")
 local ct = Window:NewTab("Credits")
