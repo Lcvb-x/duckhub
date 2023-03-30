@@ -70,3 +70,6 @@ csect:NewToggle("Infinite Jump","Jump !",function(state)
         ifs = false
     end
 end)
+csect:NewButton("Btools", "BuildTools", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+end)
